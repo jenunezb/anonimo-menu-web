@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Menú web responsive de Anónimo Restaurante Café con bebidas, desayunos, pasta y pedidos por WhatsApp."
+  >
+  <title>Anónimo Restaurante Café | Menú</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="topbar">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio de Anónimo Restaurante Café">
+        <span class="brand-mark">A</span>
+        <span class="brand-copy">
+          <strong>Anónimo</strong>
+          <span>Restaurante Café</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="site-menu">
+        <a href="#menu">Menú</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow">Cada plato es especial y hecho con amor</p>
+        <h1>Tu menú ahora también vive en la web.</h1>
+        <p class="hero-text">
+          Un espacio responsive para que tus clientes vean el menú, descubran los destacados y pidan
+          al instante desde cualquier celular.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://wa.me/573113113311" target="_blank" rel="noreferrer">
+            Pedir por WhatsApp
+          </a>
+          <a class="button button-secondary" href="#menu">
+            Ver menú
+          </a>
+        </div>
+
+        <ul class="hero-highlights">
+          <li>Frappe de café artesanal</li>
+          <li>Desayunos desde $12.000</li>
+          <li>Pastas y platos de la casa</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <article class="feature-card feature-card-main">
+          <img src="assets/1.png" alt="Plato especial de Anónimo Restaurante Café">
+        </article>
+        <article class="feature-card feature-card-accent">
+          <img src="assets/3.png" alt="Frappe de café de Anónimo Restaurante Café">
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="section-heading">
+        <p class="section-kicker">Anónimo Restaurante Café</p>
+        <h2>Un menú digital listo para vender mejor</h2>
+      </div>
+
+      <div class="intro-grid">
+        <article>
+          <h3>Identidad de marca</h3>
+          <p>
+            Se conserva la estética cálida del material original: tonos café, acentos dorados y piezas
+            fotográficas protagonistas.
+          </p>
+        </article>
+        <article>
+          <h3>Lectura clara</h3>
+          <p>
+            La información del menú está organizada por categorías para que el cliente encuentre rápido lo
+            que quiere pedir.
+          </p>
+        </article>
+        <article>
+          <h3>Contacto directo</h3>
+          <p>
+            El sitio prioriza acciones rápidas hacia WhatsApp e Instagram, ideal para ventas desde redes
+            sociales o códigos QR.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <p class="section-kicker">Menú</p>
+        <h2>Sabores para cada momento</h2>
+      </div>
+
+      <div class="menu-toolbar" role="tablist" aria-label="Filtrar categorías del menú">
+        <button class="filter-chip is-active" type="button" data-filter="all">Todo</button>
+        <button class="filter-chip" type="button" data-filter="bebidas">Bebidas</button>
+        <button class="filter-chip" type="button" data-filter="desayunos">Desayunos</button>
+        <button class="filter-chip" type="button" data-filter="platos">Platos</button>
+        <button class="filter-chip" type="button" data-filter="especial">Especial</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card" data-category="bebidas">
+          <span class="menu-tag">Bebidas</span>
+          <h3>Frappe de café</h3>
+          <p>Hecho a base de café artesanal.</p>
+          <strong>$6.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="bebidas">
+          <span class="menu-tag">Bebidas</span>
+          <h3>Cold brew</h3>
+          <p>Café frío tradicional o presentación frutos amarillos.</p>
+          <strong>$7.500</strong>
+        </article>
+
+        <article class="menu-card" data-category="bebidas">
+          <span class="menu-tag">Bebidas</span>
+          <h3>Soda italiana</h3>
+          <p>Disponible en frutos rojos o frutos amarillos.</p>
+          <strong>$6.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="bebidas">
+          <span class="menu-tag">Bebidas</span>
+          <h3>Café filtrado</h3>
+          <p>Café de la casa con notas intensas.</p>
+          <strong>$4.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="bebidas">
+          <span class="menu-tag">Bebidas</span>
+          <h3>Café en leche</h3>
+          <p>Café de la casa mezclado con leche.</p>
+          <strong>$4.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="desayunos">
+          <span class="menu-tag">Desayunos</span>
+          <h3>Huevos al gusto</h3>
+          <p>Omelette de la casa, huevos fritos, huevos pericos o huevos revueltos.</p>
+          <strong>$12.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="platos">
+          <span class="menu-tag">Platos de la casa</span>
+          <h3>Pasta en solomito de cerdo</h3>
+          <p>Acompañado en una salsa bechamel.</p>
+          <strong>$18.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="platos">
+          <span class="menu-tag">Platos de la casa</span>
+          <h3>Pollo al panko</h3>
+          <p>Acompañado de puré de papa y verduras salteadas.</p>
+          <strong>$18.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="platos">
+          <span class="menu-tag">Platos de la casa</span>
+          <h3>Pasta en salsa boloñesa</h3>
+          <p>Acompañada de tostadas con finas hierbas.</p>
+          <strong>$18.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="platos">
+          <span class="menu-tag">Platos de la casa</span>
+          <h3>Pasta con pollo y champiñones</h3>
+          <p>Acompañada de tostadas con finas hierbas.</p>
+          <strong>$18.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="platos">
+          <span class="menu-tag">Platos de la casa</span>
+          <h3>Pasta carbonara</h3>
+          <p>Acompañada de tostadas con finas hierbas.</p>
+          <strong>$18.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="platos">
+          <span class="menu-tag">Platos de la casa</span>
+          <h3>Canasta de plátano</h3>
+          <p>Relleno de pollo con champiñones o boloñesa.</p>
+          <strong>$18.000</strong>
+        </article>
+
+        <article class="menu-card" data-category="especial">
+          <span class="menu-tag">Especial</span>
+          <h3>Waffle de pandebono</h3>
+          <p>Waffle hecho en masa de pandebono acompañado de salsas de la casa.</p>
+          <strong>$8.000</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="specialties" id="especialidades">
+      <div class="section-heading">
+        <p class="section-kicker">Destacados</p>
+        <h2>Lo que más provoca pedir</h2>
+      </div>
+
+      <div class="specialties-grid">
+        <article class="spotlight spotlight-dark">
+          <div>
+            <p class="spotlight-label">Bebida estrella</p>
+            <h3>Nuestro delicioso frappe de café es único</h3>
+            <p>
+              Una bebida pensada para antojar desde la primera vista, ideal para campañas en Instagram y pedidos
+              rápidos por chat.
+            </p>
+          </div>
+          <img src="assets/3.png" alt="Frappe de café">
+        </article>
+
+        <article class="spotlight spotlight-light">
+          <img src="assets/4.png" alt="Waffle de pandebono">
+          <div>
+            <p class="spotlight-label">Antojo perfecto</p>
+            <h3>Waffle de pandebono para cualquier momento</h3>
+            <p>
+              Un producto con mucha personalidad visual, perfecto para destacar en temporadas, promociones o combos.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" id="galeria">
+      <div class="section-heading">
+        <p class="section-kicker">Galería</p>
+        <h2>La estética del menú, adaptada a pantalla</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card gallery-card-tall">
+          <img src="assets/2.png" alt="Café ideal en cualquier momento">
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/5.png" alt="Pasta especial de la casa">
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/6.png" alt="Promoción de pasta de la casa">
+        </figure>
+        <figure class="gallery-card gallery-card-wide">
+          <img src="assets/1.png" alt="Plato especial con estilo de marca de Anónimo">
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact-panel">
+        <div>
+          <p class="section-kicker">Contacto</p>
+          <h2>Listo para recibir pedidos desde el celular</h2>
+          <p>
+            Puedes compartir esta página por enlace, agregarla a la bio de Instagram o convertirla en destino de un
+            código QR dentro del local.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://wa.me/573113113311" target="_blank" rel="noreferrer">
+            WhatsApp
+          </a>
+          <a class="button button-secondary" href="https://instagram.com/anonimorestaurantecafe" target="_blank" rel="noreferrer">
+            Instagram
+          </a>
+          <a class="contact-link" href="tel:+573113113311">+57 311 311 33 11</a>
+          <a class="contact-link" href="https://instagram.com/anonimorestaurantecafe" target="_blank" rel="noreferrer">
+            @anonimorestaurantecafe
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
