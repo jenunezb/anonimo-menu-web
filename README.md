@@ -14,3 +14,8 @@ Sitio web responsive para el menu de Anonimo Restaurante Cafe.
 - `index.html`
 - `styles.css`
 - `script.js`
+
+## Ejecutar en VS Code
+
+Abre la vista **Run and Debug**, selecciona **Abrir menú Anónimo** y pulsa el botón verde o `F5`.
+La configuración incluida abre `index.html` en Microsoft Edge.
