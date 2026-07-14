@@ -1,33 +1,31 @@
 @media (max-width: 800px) {
-  body {
-    --book-controls-height: 4.5rem;
-    padding-bottom: var(--book-controls-height);
-    background: #0b0c0c;
-  }
-
-  main,
-  main > section {
-    height: calc(100vh - var(--book-controls-height));
-  }
-
-  main > section {
-    min-height: calc(100vh - var(--book-controls-height));
-  }
-
   .book-controls {
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: var(--book-controls-height);
-    justify-content: center;
-    gap: 1rem;
-    padding: 0.65rem 1rem;
-    border-width: 1px 0 0;
-    background: #0b0c0c;
+    right: 0.75rem;
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+    gap: 0.35rem;
+    padding: 0.3rem;
+    border-color: #ffffff1a;
+    border-radius: 999px;
+    background: #0b0c0c99;
+    opacity: 0.72;
+    backdrop-filter: blur(8px);
+    transition: opacity 0.18s;
+  }
+
+  .book-controls:focus-within,
+  .book-controls:active {
+    opacity: 1;
   }
 
   .book-controls button {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+
+  .book-controls > span {
+    min-width: 3.4rem;
+    font-size: 0.58rem;
   }
 }
