@@ -208,6 +208,127 @@ a {
 .dishes {
   padding: 9rem 5vw;
 }
+.breakfast-copy {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #ffffff33;
+}
+.breakfast-copy article {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1.5rem;
+  min-height: 25rem;
+  padding: 3rem;
+  border-bottom: 1px solid #ffffff33;
+}
+.breakfast-copy article + article {
+  border-left: 1px solid #ffffff33;
+}
+.breakfast-category {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 5rem 3rem 2rem;
+  border-bottom: 1px solid #ffffff33;
+  color: var(--y);
+  font: clamp(3rem, 6vw, 6rem)/1 "Bebas Neue";
+}
+.breakfast-copy .pastry {
+  min-height: 19rem;
+}
+.breakfast-copy .pastry h3 {
+  font-size: clamp(2.6rem, 4vw, 4.5rem);
+}
+.lunches {
+  background: var(--c);
+}
+.lunch-copy article {
+  min-height: 21rem;
+}
+.lunch-copy h3 {
+  max-width: 14ch;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+}
+.beverages {
+  background: var(--w);
+  color: #111;
+}
+.beverages .section-head > p,
+.beverage-copy .description {
+  color: #666;
+}
+.beverage-copy {
+  border-color: #1113;
+}
+.beverage-copy article {
+  min-height: 18rem;
+  border-color: #1113;
+}
+.beverage-copy article + article {
+  border-left-color: #1113;
+}
+.beverage-copy h3 {
+  max-width: 14ch;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+}
+.catering {
+  background: var(--y);
+  color: #21180a;
+}
+.catering .index,
+.catering .catering-copy article > span,
+.catering .catering-copy article > div > p:first-child {
+  color: #5b4300;
+}
+.catering .section-head > p,
+.catering .catering-copy .description {
+  color: #493600;
+}
+.catering-copy {
+  border-color: #21180a40;
+}
+.catering-copy article {
+  min-height: 20rem;
+  border-color: #21180a33;
+}
+.catering-copy article + article {
+  border-left-color: #21180a33;
+}
+.catering .catering-copy h3 {
+  max-width: 14ch;
+  font: 800 clamp(2rem, 3.5vw, 3.8rem)/1.02 "Montserrat", sans-serif;
+  letter-spacing: -0.05em;
+}
+.catering .section-head h2 {
+  max-width: 12ch;
+  font: 800 clamp(3.5rem, 7vw, 7rem)/0.95 "Montserrat", sans-serif;
+  letter-spacing: -0.07em;
+}
+.breakfast-copy article > span {
+  color: var(--y);
+  font-size: 0.7rem;
+}
+.breakfast-copy article > div {
+  align-self: end;
+}
+.breakfast-copy article > div > p:first-child {
+  margin: 0 0 1rem;
+  color: var(--y);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.breakfast-copy h3 {
+  max-width: 10ch;
+  margin: 0 0 1.5rem;
+  font: clamp(3.5rem, 6vw, 6.5rem)/0.85 "Bebas Neue";
+}
+.breakfast-copy .description {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--g);
+  font: 600 clamp(1.25rem, 2vw, 1.8rem)/1.5 "Cormorant Garamond";
+}
 .section-head {
   display: flex;
   justify-content: space-between;
@@ -345,12 +466,12 @@ a {
   height: 100%;
   object-fit: cover;
 }
-.events-page {position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#111}
+.events-page {position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#111}
 .events-page>img {position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .events-overlay {position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,8,.88) 0%,rgba(8,8,8,.56) 48%,rgba(8,8,8,.18) 100%)}
-.events-page article {position:relative;z-index:1;max-width:52rem;padding:8rem 7vw 6rem}
+.events-page article {position:relative;z-index:1;max-width:52rem;padding:8rem 7vw 6rem;text-align:center}
 .events-page h2 {margin:0;font:clamp(5rem,10vw,10rem)/.82 "Bebas Neue"}
-.events-page article>p:not(.index) {max-width:34rem;font-size:1.1rem;line-height:1.7;color:#ddd}
+.events-page article>p:not(.index) {max-width:34rem;margin-right:auto;margin-left:auto;font-size:1.1rem;line-height:1.7;color:#ddd}
 .events-page article>a {display:inline-block;margin-top:1.5rem;padding-bottom:.4rem;border-bottom:1px solid var(--y);color:var(--y);font-weight:700}
 .contact {
   padding: 10rem 6vw;
@@ -406,8 +527,19 @@ footer {
   .feature,
   .pair,
   .experience,
-  .portfolio-index {
+  .portfolio-index,
+  .breakfast-copy {
     grid-template-columns: 1fr;
+  }
+  .breakfast-copy article {
+    min-height: 19rem;
+    padding: 2rem 0;
+  }
+  .breakfast-copy article + article {
+    border-left: 0;
+  }
+  .breakfast-category {
+    padding: 4rem 0 1.5rem;
   }
   .portfolio-index {
     gap: 2.5rem;
