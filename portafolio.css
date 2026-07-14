@@ -208,6 +208,127 @@ a {
 .dishes {
   padding: 9rem 5vw;
 }
+.breakfast-copy {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #ffffff33;
+}
+.breakfast-copy article {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1.5rem;
+  min-height: 25rem;
+  padding: 3rem;
+  border-bottom: 1px solid #ffffff33;
+}
+.breakfast-copy article + article {
+  border-left: 1px solid #ffffff33;
+}
+.breakfast-category {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 5rem 3rem 2rem;
+  border-bottom: 1px solid #ffffff33;
+  color: var(--y);
+  font: clamp(3rem, 6vw, 6rem)/1 "Bebas Neue";
+}
+.breakfast-copy .pastry {
+  min-height: 19rem;
+}
+.breakfast-copy .pastry h3 {
+  font-size: clamp(2.6rem, 4vw, 4.5rem);
+}
+.lunches {
+  background: var(--c);
+}
+.lunch-copy article {
+  min-height: 21rem;
+}
+.lunch-copy h3 {
+  max-width: 14ch;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+}
+.beverages {
+  background: var(--w);
+  color: #111;
+}
+.beverages .section-head > p,
+.beverage-copy .description {
+  color: #666;
+}
+.beverage-copy {
+  border-color: #1113;
+}
+.beverage-copy article {
+  min-height: 18rem;
+  border-color: #1113;
+}
+.beverage-copy article + article {
+  border-left-color: #1113;
+}
+.beverage-copy h3 {
+  max-width: 14ch;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+}
+.catering {
+  background: var(--y);
+  color: #21180a;
+}
+.catering .index,
+.catering .catering-copy article > span,
+.catering .catering-copy article > div > p:first-child {
+  color: #5b4300;
+}
+.catering .section-head > p,
+.catering .catering-copy .description {
+  color: #493600;
+}
+.catering-copy {
+  border-color: #21180a40;
+}
+.catering-copy article {
+  min-height: 20rem;
+  border-color: #21180a33;
+}
+.catering-copy article + article {
+  border-left-color: #21180a33;
+}
+.catering .catering-copy h3 {
+  max-width: 14ch;
+  font: 800 clamp(2rem, 3.5vw, 3.8rem)/1.02 "Montserrat", sans-serif;
+  letter-spacing: -0.05em;
+}
+.catering .section-head h2 {
+  max-width: 12ch;
+  font: 800 clamp(3.5rem, 7vw, 7rem)/0.95 "Montserrat", sans-serif;
+  letter-spacing: -0.07em;
+}
+.breakfast-copy article > span {
+  color: var(--y);
+  font-size: 0.7rem;
+}
+.breakfast-copy article > div {
+  align-self: end;
+}
+.breakfast-copy article > div > p:first-child {
+  margin: 0 0 1rem;
+  color: var(--y);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.breakfast-copy h3 {
+  max-width: 10ch;
+  margin: 0 0 1.5rem;
+  font: clamp(3.5rem, 6vw, 6.5rem)/0.85 "Bebas Neue";
+}
+.breakfast-copy .description {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--g);
+  font: 600 clamp(1.25rem, 2vw, 1.8rem)/1.5 "Cormorant Garamond";
+}
 .section-head {
   display: flex;
   justify-content: space-between;
@@ -406,8 +527,19 @@ footer {
   .feature,
   .pair,
   .experience,
-  .portfolio-index {
+  .portfolio-index,
+  .breakfast-copy {
     grid-template-columns: 1fr;
+  }
+  .breakfast-copy article {
+    min-height: 19rem;
+    padding: 2rem 0;
+  }
+  .breakfast-copy article + article {
+    border-left: 0;
+  }
+  .breakfast-category {
+    padding: 4rem 0 1.5rem;
   }
   .portfolio-index {
     gap: 2.5rem;
