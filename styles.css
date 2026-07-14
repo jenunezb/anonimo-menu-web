@@ -61,6 +61,8 @@ button {
 }
 
 .topbar {
+  position: relative;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -571,6 +573,8 @@ button {
 
   .nav-toggle {
     display: inline-flex;
+    position: relative;
+    z-index: 2;
   }
 
   .nav-links {
@@ -586,6 +590,23 @@ button {
     border-radius: var(--radius-md);
     background: rgba(255, 250, 243, 0.96);
     box-shadow: var(--shadow);
+    z-index: 1;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 0.75rem 0.85rem;
+    border-radius: 0.75rem;
+    color: var(--coffee);
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus-visible {
+    background: rgba(255, 196, 0, 0.18);
+  }
+
+  .nav-links a::after {
+    display: none;
   }
 
   .nav-links.is-open {
